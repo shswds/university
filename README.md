@@ -4,3 +4,7 @@
 2. mbed 보드와 시리얼 통신을 통해 정보를 주고 받는다.
 # main.cpp
 1. mbed보드에서 master pc가 내린 명령을 기반으로 mbed 보드와 연결된 액츄에이터(피부, dc모터)
+2. 서보 모터 위치 설정
+  servo.pulsewidth_us(1500);  // 초기 위치(90도)로 설정
+  servo.pulsewidth_us(500);  // 0도 (좌측 끝) 위치
+  servo.pulsewidth_us(2500);  // 180도 (우측 끝) 위치
